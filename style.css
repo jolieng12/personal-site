@@ -3,6 +3,7 @@
     --blackish: #050405;
     --smoky-purple: #59505a;
     --light-accent: #eee;
+    --brighter-purple: #8d6392; 
 }
 
 html {
@@ -13,6 +14,7 @@ html {
 
 body {
     font-family: "Space Grotesk", sans-serif;
+    background-color: var(--light-accent);
 }
 
 /* navigation */
@@ -73,6 +75,12 @@ a {
     font-size: 44px;
 }
 
+/* banner */
+.title {
+    color: var(--brighter-purple);
+    font-weight: 700;
+}
+
 /* footer */ 
 footer {
     background-color: var(--amethyst);
@@ -84,15 +92,24 @@ footer {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding-left: 0;
 }
 
-.site-map li {
+.site-map li, .social-media-links li {
     margin: 1em;
 }
 
 hr {
     background-color: var(--light-accent);
     height: 1em;
+}
+
+/* projects */
+.card {
+    min-height: 75vh;
+    max-height: 75vh;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media (min-width: 675px) {
